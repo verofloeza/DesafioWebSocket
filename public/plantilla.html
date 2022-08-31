@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server hbs</title>
+    <!-- Importando bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+
+        <!-- Formulario -->
+            <h1 style="color:blue;">Ingrese datos</h1>
+            <br>
+            <form action="/productos" method="post">
+                <div class="form-group">
+                    <label for="title"><b>Nombre</b></label>
+                    <input id="title" class="form-control" type="text" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="price"><b>Precio</b></label>
+                    <input id="price" class="form-control" type="text" name="price">
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail"><b>Imagen</b></label>
+                    <input id="thumbnail" class="form-control" type="text" name="thumbnail">
+                </div>
+                <button class="btn btn-success mt-3 mb-5">Enviar</button>
+            </form>
+            <!-- Final Formulario -->
+
+        </div>
+        <!-- Tabla -->
+        <div>
+            <h2 style="color:crimson;">Historial</h2>
+            <div class="table-responsive">
+                <table class="table table-dark">
+                    <tr style="color: yellow;"> <th>Nombre</th> <th>Precio</th> <th>Imagen</th> </tr>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>300</td>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrIaOoNLKb_PGfc_nS4s3IVBC8x7x9nYOqQ&usqp=CAU" width="30"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
